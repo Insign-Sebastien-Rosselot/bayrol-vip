@@ -1,0 +1,64 @@
+// =============================================
+// Border radius
+// =============================================
+
+$light-radius: 5px;
+$default-radius: 5px;
+$large-radius: 25px;
+
+// =============================================
+// Box-shadox
+// =============================================
+$default-light-shadow: rgba(0, 0, 0, 0.15);
+$default-medium-shadow: rgba(0, 0, 0, 0.30);
+$default-strong-shadow: rgba(0, 0, 0, 0.45);
+
+// =============================================
+// Transitions
+// =============================================
+
+$default-transition-property: all;
+$default-transition-duration: 200ms;
+$default-transition-function: ease-in;
+$default-transition-delay: 0;
+
+$transition-all: $default-transition-property $default-transition-duration $default-transition-function;
+
+// =============================================
+// Absolute center
+// =============================================
+$abs-vert-center: translate(0,-50%);
+$abs-hor-center: translate(-50%,0);
+$abs-center: translate(-50%,-50%);
+
+// =============================================
+// gutter
+// =============================================
+$fix-gutter-xl: 60px;
+$fix-gutter-l: 40px;
+$fix-gutter-m: 30px;
+$fix-gutter-s: 20px;
+$fix-gutter-xs: 10px;
+
+$rel-gutter-l: 20%;
+$rel-gutter-m: 10%;
+$rel-gutter-s: 5%;
+
+// =============================================
+// Clearfix / float clear
+// =============================================
+.float-clear{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+// =============================================
+// flex grid display
+// =============================================
+.flex-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}

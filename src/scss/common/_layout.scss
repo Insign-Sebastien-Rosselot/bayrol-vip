@@ -1,3 +1,80 @@
-body{
-  background: #fff;
+/* --- Global Layout --- */
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    color: $brand-first;
+    &:link {
+        color: $brand-first;
+    }
+    &:visited {
+        color: $brand-first;
+    }
+    &:hover {
+        color: $gradiant-strong;
+    }
+    &:active {
+        color: $gradiant-strong;
+    }
+}
+
+a,
+a span,
+button,
+.button {
+    cursor: pointer;
+}
+
+a,
+a span,
+a img,
+input,
+select,
+textarea,
+button,
+.button {
+    transition: $transition-all;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $grey-medium;
+    font-family: $base-font;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: $grey-medium;
+    font-family: $base-font;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: $grey-medium;
+    font-family: $base-font;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: $grey-medium;
+    font-family: $base-font;
+}
+
+::placeholder {
+    color: $grey-medium;
+    font-family: $base-font;
 }

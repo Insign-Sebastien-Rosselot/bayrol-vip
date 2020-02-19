@@ -1,0 +1,25 @@
+body{
+    background: $grey-light;
+    color: $brand-third;
+}
+
+.page-container{
+    position: relative;
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.full-width-block{
+    width: 100%;
+}
+
+.half-width-block{
+    width: 50%;
+}
+
+// page elements
+.textual-block,
+.vip-form-block{
+    padding: 0 5%;
+}

@@ -1,16 +1,16 @@
 /* --- External files (reset, dependencys, lib ...) --- */
-@import "common/normalize";
+@import "external/normalize";
 
 /* --- Common styles --- */
-@import "common/layout";
 @import "common/var";
 @import "common/color";
 @import "common/typo";
 @import "common/form";
+@import "common/layout";
 
 /* --- Component styles --- */
-@import "common/header";
-@import "common/footer";
+@import "component/header";
+@import "component/footer";
 
 /* --- Specific style --- */
 @import "specific/bayrol-vip";

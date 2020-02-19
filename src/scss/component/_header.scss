@@ -1,0 +1,21 @@
+// Header
+.page-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .header-content{
+        position: relative;
+        min-height: 200px;
+    }
+}
+
+.logo-link{
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: $rel-gutter-s;
+}
+.logo-visual{
+    width: 300px;
+}

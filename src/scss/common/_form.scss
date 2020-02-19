@@ -1,0 +1,58 @@
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="file"],
+input[type="datetime"],
+input[type="email"] {
+    background: $grey-light;
+    border: 1px solid $gradiant-strong;
+    color: $brand-third;
+    font-family: $base-font;
+    padding: 10px 10px;
+    width: 100%;
+    &:focus {
+
+    }
+}
+
+textarea {
+    background: $grey-light;
+    border: 1px solid $gradiant-strong;
+    color: $brand-third;
+    font-family: $base-font;
+    padding: 10px 10px;
+    width: 100%;
+    &:focus {
+
+    }
+}
+
+select {
+    background: $grey-light;
+    border: 1px solid $gradiant-strong;
+    color: $brand-third;
+    cursor: pointer;
+    font-family: $base-font;
+    padding: 10px 10px;
+    width: 100%;
+    &:focus{
+
+    }
+}
+
+input[type="submit"],
+button{
+    background: $grey-light;
+    border: 1px solid $gradiant-strong;
+    color: $brand-third;
+    cursor: pointer;
+    font-family: $base-font;
+    padding: 10px 10px;
+    width: 100%;
+    &:hover{
+        background: $gradiant-strong;
+        color: $grey-light;
+    }
+}
