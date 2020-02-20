@@ -19,7 +19,203 @@ body{
 }
 
 // page elements
-.textual-block,
-.vip-form-block{
-    padding: 0 5%;
+.top-banner{
+    max-width: 100%;
 }
+
+.textual-block{
+    padding: 0 $rel-gutter-s $fix-gutter-xl $rel-gutter-s;
+}
+
+.welcome-wording{
+    .page-title{
+        color: $brand-first;
+        font-family: $extra-light-font;
+        font-size: $title-font-size-xl;
+        font-weight: 300;
+        margin: $fix-gutter-m 0 $fix-gutter-xl 0;
+        text-align: center;
+    }
+    .info-title{
+        font-family: $heavy-font;
+        font-size: $text-font-size-xl;
+        margin: 0 0 $fix-gutter-xs 0;
+    }
+    .common-text{
+        font-size: $text-font-size-m;
+        margin: 0 0 $fix-gutter-l 0;
+        strong{
+            font-size: $text-font-size-xl;
+        }
+    }
+}
+
+.downloadable-content{
+    .dl-list{
+        padding: 0;
+        margin: 0;
+    }
+    .dl-list-item{
+
+    }
+    .dl-link{
+        display: block;
+        padding: $fix-gutter-s 0;
+        border-bottom: 1px solid $brand-first;
+        &:hover{
+            background: $grey-soft;
+        }
+    }
+    .dl-picto{
+        margin: 0 $fix-gutter-s 0 0;
+        vertical-align: middle;
+    }
+    .doc-name{
+        font-family: $heavy-font;
+        font-weight: 800;
+    }
+    .doc-type{
+        float: right;
+    }
+}
+
+.vip-form-online{
+    background: $brand-first;
+    color: $grey-light;
+    padding: 0 $rel-gutter-s;
+}
+
+.vip-form{
+    padding: $fix-gutter-xl 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vip-form-title{
+    width: 100%;
+    font-family: $heavy-font;
+    font-size: $title-font-size-s;
+    margin: 0 0 $fix-gutter-xs 0;
+}
+
+.vip-form-article-title{
+    font-family: $base-font;
+    font-size: $title-font-size-s;
+    font-weight: 300;
+}
+
+.vip-form-informations{
+    padding: 0 $fix-gutter-m 0 0;
+}
+
+.vip-form-buy-proof{
+    padding: 0 0 0 $fix-gutter-m;
+}
+
+.vip-form-field{
+    padding: 0 0 $fix-gutter-m 0;
+    &.vip-form-cgv{
+        position: relative;
+        padding: 0 0 $fix-gutter-s $fix-gutter-m;
+        input{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+        }
+        label{
+            font-size: $text-font-size-s;
+        }
+    }
+    &.vip-form-nl{
+        position: relative;
+        padding: 0 0 $fix-gutter-s $fix-gutter-m;
+    }
+}
+
+.vip-form-input-file-field{
+    margin: 0 0 $fix-gutter-s 0;
+    padding: 0 0 $fix-gutter-s 0;
+    border-bottom: 1px solid $ui-primary;
+    label{
+        width: 39%;
+        display: inline-block;
+        font-weight: 800;
+        font-family: $heavy-font;
+
+    }
+    input[type="file"]{
+        width: 60%;
+    }
+}
+
+.vip-form{
+    input[type="submit"]{
+        font-family: $heavy-font;
+        font-weight: 800;
+    }
+}
+
+.vip-form-postal{
+    padding: $fix-gutter-xl $rel-gutter-s;
+}
+
+.prostal-process-list{
+    margin: 0;
+    padding: 0;
+    li{
+        font-size: $text-font-size-xl;
+        padding: $fix-gutter-s 0;
+    }
+}
+
+.postal-process{
+    font-size: $text-font-size-xl;
+}
+
+/* --- Large screen specifications --- */
+@media screen and (min-width: $screen-large){
+
+}
+
+/* --- Tablet specifications --- */
+@media screen and (max-width: $screen-medium){
+
+}
+
+/* --- Phone specifications --- */
+@media screen and (max-width: $screen-small){
+    .downloadable-content{
+        .doc-type{
+            margin: 5px 0 0 0;
+        }
+    }
+    .half-width-block{
+        width: 100%;
+    }
+    .vip-form-informations,
+    .vip-form-buy-proof{
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+.page-footer{
+    background: $brand-first;
+    color: $grey-light;
+    &:after{
+        content: '';
+        display: table;
+        width: 100%;
+    }
+}
+
+.dashboard-add-btn{
+    border: none;
+    font-size: $title-font-size-s;
+    &:hover{
+        background: $grey-light;
+        box-shadow: none;
+        color: $brand-first;
+    }
+}
+
+.footer-nav{
+    float: left;
+    ul{
+        padding: $fix-gutter-m;
+        margin: 0;
+        li{
+            display: inline-block;
+            padding: 0 $fix-gutter-xs 0 0;
+        }
+    }
+    .footer-nav-link{
+        color: $grey-light;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.hotline,
+.copyright{
+    float: right;
+    padding: $fix-gutter-m;
+    a{
+        color: $grey-light;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+/* --- Large screen specifications --- */
+@media screen and (min-width: $screen-large){
+
+}
+
+/* --- Tablet specifications --- */
+@media screen and (max-width: $screen-medium){
+
+}
+
+/* --- Phone specifications --- */
+@media screen and (max-width: $screen-small){
+
+}

@@ -16,6 +16,22 @@
     top: 100px;
     left: $rel-gutter-s;
 }
+
 .logo-visual{
     width: 300px;
+}
+
+/* --- Large screen specifications --- */
+@media screen and (min-width: $screen-large){
+
+}
+
+/* --- Tablet specifications --- */
+@media screen and (max-width: $screen-medium){
+
+}
+
+/* --- Phone specifications --- */
+@media screen and (max-width: $screen-small){
+
 }

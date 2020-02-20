@@ -2,9 +2,30 @@
 @font-face {
     font-family: "Univers-regular";
     src:    url("/assets/fonts/univers-condensed-light.woff2"),
-            url("/assets/fonts/univers-condensed-light.woff")
+    url("/assets/fonts/univers-condensed-light.woff")
 }
 $base-font: "Univers-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: "Univers-light";
+    src:    url("/assets/fonts/univers-light.woff2"),
+    url("/assets/fonts/univers-light.woff")
+}
+$light-font: "Univers-light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: "Univers-extra-light";
+    src:    url("/assets/fonts/univers-ultra-condensed-light.woff2"),
+    url("/assets/fonts/univers-ultra-condensed-light.woff")
+}
+$extra-light-font: "Univers-extra-light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: "Univers-bold";
+    src:    url("/assets/fonts/univers-extended-bold.woff2"),
+    url("/assets/fonts/univers-extended-bold.woff")
+}
+$bold-font: "Univers-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 @font-face {
     font-family: "Univers-heavy";
@@ -13,9 +34,23 @@ $base-font: "Univers-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 $heavy-font: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+/* --- Font sizes --- */
+$title-font-size-xl: 9rem;
+$title-font-size-m: 5rem;
+$title-font-size-s: 3.8rem;
+
+$text-font-size-xl: 2.1rem;
+$text-font-size-m: 1.6rem;
+$text-font-size-s: 1.2rem;
+
 /* --- Classical declaration --- */
+html{
+    font-size: 62.5%;
+}
+
 body{
     font-family: $base-font;
+    font-size: $text-font-size-m;
 }
 
 h1,
@@ -26,11 +61,21 @@ h5{
     font-family: $heavy-font;
 }
 
-/* --- Font sizes --- */
-$title-font-size-xl: 9rem;
-$title-font-size-m: 5rem;
-$title-font-size-s: 3.8rem;
+/* --- Large screen specifications --- */
+@media screen and (min-width: $screen-large){
 
-$text-font-size-xl: 2.1rem;
-$text-font-size-m: 1.6rem;
-$text-font-size-s: 1.2rem;
+}
+
+/* --- Tablet specifications --- */
+@media screen and (max-width: $screen-medium){
+    html{
+        font-size: 55%;
+    }
+}
+
+/* --- Phone specifications --- */
+@media screen and (max-width: $screen-small){
+    html{
+        font-size: 45%;
+    }
+}

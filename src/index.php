@@ -34,15 +34,13 @@
             <p class="common-text">
                 <strong>Le programme VIP, un programme qui vous offre des chèques de réduction chaque mois.</strong>
             </p>
+            <h2 class="info-title">GAGNEZ DES € GRÂCE À LA CARTE VIP</h2>
             <p class="common-text">
-                <strong>GAGNEZ DES € GRÂCE À LA CARTE VIP</strong>
-                <br />
-                Chaque mois, cumulez des points qui seront transformés en chèques de réduction.
+                Chaque mois, cumulez des points qui seront transformés en <span class="text-highlight">chèques de réduction</span>.
             </p>
+            <h2 class="info-title">DES PRODUITS « BOOSTERS » POUR BÉNÉFICIER D’UN BONUS DE POINTS</h2>
             <p class="common-text">
-                <strong>DES PRODUITS « BOOSTERS » POUR BÉNÉFICIER D’UN BONUS DE POINTS</strong>
-                <br />
-                En achetant les produits « boosters » BAYROL, vous gagnez plus de points et augmentez plus rapidement le montant de votre cagnotte.
+                En achetant les produits <span class="text-highlight">« boosters » BAYROL</span>, vous gagnez plus de points et augmentez plus rapidement le montant de votre cagnotte.
                 <br />
                 Pour découvrir les offres du programme, <a href="file_path">téléchargez le dépliant de l’opération BAYROL VIP au format PDF</a>.
             </p>
@@ -75,7 +73,7 @@
     </section>
 
     <section class="full-width-block vip-form-block vip-form-online">
-        <form>
+        <form method="post" id="vip-form" class="vip-form">
             <h2 class="vip-form-title">
                 Saisissez et envoyez vos preuves d'achats en ligne
             </h2>
@@ -111,15 +109,15 @@
                 <h3 class="vip-form-article-title">
                     Vos preuves d'achats
                 </h3>
-                <div class="full-width-block vip-form-field">
+                <div class="full-width-block vip-form-field vip-form-input-file-field">
                     <label for="proof1">Preuve d'achat 1</label>
                     <input type="file" name="proof1" id="proof1" placeholder="Ajouter une pièce jointe"/>
                 </div>
-                <div class="full-width-block vip-form-field">
+                <div class="full-width-block vip-form-field vip-form-input-file-field">
                     <label for="proof2">Preuve d'achat 2</label>
                     <input type="file" name="proof2" id="proof2" placeholder="Ajouter une pièce jointe" />
                 </div>
-                <div class="full-width-block vip-form-field">
+                <div class="full-width-block vip-form-field vip-form-input-file-field">
                     <label for="proof3">Preuve d'achat 3</label>
                     <input type="file" name="proof3" id="proof3" placeholder="Ajouter une pièce jointe" />
                 </div>
@@ -133,9 +131,9 @@
                     <p class="field-label">
                         * Souhaitez vous recevoir la newsletter Bayrol ?
                     </p>
-                    <input type="radio" name="nl-subscribe-yes" id="nl-subscribe-yes" />
+                    <input type="radio" name="nl-subscribe" id="nl-subscribe-yes" value="nl-subscribe-yes" />
                     <label for="nl-subscribe-yes">Oui</label>
-                    <input type="radio" name="nl-subscribe-no" id="nl-subscribe-no" />
+                    <input type="radio" name="nl-subscribe" id="nl-subscribe-no" value="nl-subscribe-no" />
                     <label for="nl-subscribe-no">Non</label>
                     <p class="mandatory-info">
                         Les champs marqués d'un astérisque sont obligatoires
@@ -200,11 +198,13 @@
                 </li>
             </ul>
         </nav>
-        <span class="copyright">
-            &copy; 2020 BAYROL
-        </span>
+
         <span class="hotline">
             HOTLINE <a href="tel:0102030405">01 02 03 04 05</a>
+        </span>
+
+        <span class="copyright">
+            &copy; 2020 BAYROL
         </span>
     </footer>
 </div>

@@ -328,12 +328,29 @@ template {
   src: url("/assets/fonts/univers-condensed-light.woff2"), url("/assets/fonts/univers-condensed-light.woff"); }
 
 @font-face {
+  font-family: "Univers-light";
+  src: url("/assets/fonts/univers-light.woff2"), url("/assets/fonts/univers-light.woff"); }
+
+@font-face {
+  font-family: "Univers-extra-light";
+  src: url("/assets/fonts/univers-ultra-condensed-light.woff2"), url("/assets/fonts/univers-ultra-condensed-light.woff"); }
+
+@font-face {
+  font-family: "Univers-bold";
+  src: url("/assets/fonts/univers-extended-bold.woff2"), url("/assets/fonts/univers-extended-bold.woff"); }
+
+@font-face {
   font-family: "Univers-heavy";
   src: url("/assets/fonts/univers-condensed-light.woff2"), url("/assets/fonts/univers-condensed-light.woff"); }
 
+/* --- Font sizes --- */
 /* --- Classical declaration --- */
+html {
+  font-size: 62.5%; }
+
 body {
-  font-family: "Univers-regular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Univers-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem; }
 
 h1,
 h2,
@@ -342,13 +359,22 @@ h4,
 h5 {
   font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/* --- Font sizes --- */
+/* --- Large screen specifications --- */
+/* --- Tablet specifications --- */
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 55%; } }
+
+/* --- Phone specifications --- */
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 45%; } }
+
 input[type="text"],
 input[type="password"],
 input[type="url"],
 input[type="tel"],
 input[type="search"],
-input[type="file"],
 input[type="datetime"],
 input[type="email"] {
   background: #FFFFFF;
@@ -357,6 +383,23 @@ input[type="email"] {
   font-family: "Univers-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 10px 10px;
   width: 100%; }
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="url"]:focus,
+  input[type="tel"]:focus,
+  input[type="search"]:focus,
+  input[type="datetime"]:focus,
+  input[type="email"]:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+
+input[type="file"] {
+  background: #FFFFFF;
+  border: 1px solid #0B6480;
+  color: #00374C;
+  font-family: "Univers-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 10px 10px; }
+  input[type="file"]:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
 
 textarea {
   background: #FFFFFF;
@@ -365,6 +408,8 @@ textarea {
   font-family: "Univers-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 10px 10px;
   width: 100%; }
+  textarea:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
 
 select {
   background: #FFFFFF;
@@ -374,6 +419,8 @@ select {
   font-family: "Univers-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 10px 10px;
   width: 100%; }
+  select:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
 
 input[type="submit"],
 button {
@@ -387,6 +434,7 @@ button {
   input[type="submit"]:hover,
   button:hover {
     background: #0B6480;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     color: #FFFFFF; }
 
 /* --- Global Layout --- */
@@ -476,6 +524,52 @@ li {
 .logo-visual {
   width: 300px; }
 
+/* --- Large screen specifications --- */
+/* --- Tablet specifications --- */
+/* --- Phone specifications --- */
+.page-footer {
+  background: #009BAA;
+  color: #FFFFFF; }
+  .page-footer:after {
+    content: '';
+    display: table;
+    width: 100%; }
+
+.dashboard-add-btn {
+  border: none;
+  font-size: 3.8rem; }
+  .dashboard-add-btn:hover {
+    background: #FFFFFF;
+    box-shadow: none;
+    color: #009BAA; }
+
+.footer-nav {
+  float: left; }
+  .footer-nav ul {
+    padding: 30px;
+    margin: 0; }
+    .footer-nav ul li {
+      display: inline-block;
+      padding: 0 10px 0 0; }
+  .footer-nav .footer-nav-link {
+    color: #FFFFFF; }
+    .footer-nav .footer-nav-link:hover {
+      text-decoration: underline; }
+
+.hotline,
+.copyright {
+  float: right;
+  padding: 30px; }
+  .hotline a,
+  .copyright a {
+    color: #FFFFFF; }
+    .hotline a:hover,
+    .copyright a:hover {
+      text-decoration: underline; }
+
+/* --- Large screen specifications --- */
+/* --- Tablet specifications --- */
+/* --- Phone specifications --- */
 /* --- Specific style --- */
 body {
   background: #FFFFFF;
@@ -493,6 +587,134 @@ body {
 .half-width-block {
   width: 50%; }
 
-.textual-block,
-.vip-form-block {
+.top-banner {
+  max-width: 100%; }
+
+.textual-block {
+  padding: 0 5% 60px 5%; }
+
+.welcome-wording .page-title {
+  color: #009BAA;
+  font-family: "Univers-extra-light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 9rem;
+  font-weight: 300;
+  margin: 30px 0 60px 0;
+  text-align: center; }
+
+.welcome-wording .info-title {
+  font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.1rem;
+  margin: 0 0 10px 0; }
+
+.welcome-wording .common-text {
+  font-size: 1.6rem;
+  margin: 0 0 40px 0; }
+  .welcome-wording .common-text strong {
+    font-size: 2.1rem; }
+
+.downloadable-content .dl-list {
+  padding: 0;
+  margin: 0; }
+
+.downloadable-content .dl-link {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 1px solid #009BAA; }
+  .downloadable-content .dl-link:hover {
+    background: #EEEEEE; }
+
+.downloadable-content .dl-picto {
+  margin: 0 20px 0 0;
+  vertical-align: middle; }
+
+.downloadable-content .doc-name {
+  font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800; }
+
+.downloadable-content .doc-type {
+  float: right; }
+
+.vip-form-online {
+  background: #009BAA;
+  color: #FFFFFF;
   padding: 0 5%; }
+
+.vip-form {
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap; }
+
+.vip-form-title {
+  width: 100%;
+  font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3.8rem;
+  margin: 0 0 10px 0; }
+
+.vip-form-article-title {
+  font-family: "Univers-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3.8rem;
+  font-weight: 300; }
+
+.vip-form-informations {
+  padding: 0 30px 0 0; }
+
+.vip-form-buy-proof {
+  padding: 0 0 0 30px; }
+
+.vip-form-field {
+  padding: 0 0 30px 0; }
+  .vip-form-field.vip-form-cgv {
+    position: relative;
+    padding: 0 0 20px 30px; }
+    .vip-form-field.vip-form-cgv input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px; }
+    .vip-form-field.vip-form-cgv label {
+      font-size: 1.2rem; }
+  .vip-form-field.vip-form-nl {
+    position: relative;
+    padding: 0 0 20px 30px; }
+
+.vip-form-input-file-field {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #00BBB8; }
+  .vip-form-input-file-field label {
+    width: 39%;
+    display: inline-block;
+    font-weight: 800;
+    font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .vip-form-input-file-field input[type="file"] {
+    width: 60%; }
+
+.vip-form input[type="submit"] {
+  font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800; }
+
+.vip-form-postal {
+  padding: 60px 5%; }
+
+.prostal-process-list {
+  margin: 0;
+  padding: 0; }
+  .prostal-process-list li {
+    font-size: 2.1rem;
+    padding: 20px 0; }
+
+.postal-process {
+  font-size: 2.1rem; }
+
+/* --- Large screen specifications --- */
+/* --- Tablet specifications --- */
+/* --- Phone specifications --- */
+@media screen and (max-width: 640px) {
+  .downloadable-content .doc-type {
+    margin: 5px 0 0 0; }
+  .half-width-block {
+    width: 100%; }
+  .vip-form-informations,
+  .vip-form-buy-proof {
+    padding: 0; } }
