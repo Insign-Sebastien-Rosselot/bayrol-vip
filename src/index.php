@@ -16,7 +16,7 @@
 <div class="page-container">
     <header class="page-header">
         <div class="header-content">
-            <a href="" class="logo-link">
+            <a href="https://www.bayrol.fr/" class="logo-link">
                 <img src="assets/images/logos/logo-white.svg" alt="Bayrol" class="logo-visual"/>
             </a>
         </div>
@@ -177,22 +177,22 @@
         <nav class="footer-nav">
             <ul>
                 <li>
-                    <a href="" class="footer-nav-link">
+                    <a href="https://www.bayrol.fr/" class="footer-nav-link">
                         BAYROL.fr
                     </a>
                 </li>
                 <li>
-                    <a href="" class="footer-nav-link">
+                    <a href="https://www.bayrol.fr/informations-legales/" class="footer-nav-link">
                         Modification de mes données personnelles
                     </a>
                 </li>
                 <li>
-                    <a href="" class="footer-nav-link">
+                    <a href="https://www.bayrol.fr/informations-legales/" class="footer-nav-link">
                         Informations légales
                     </a>
                 </li>
                 <li>
-                    <a href="" class="footer-nav-link">
+                    <a href="https://www.bayrol.fr/informations-legales/datenschutzerklaerung/#c1984" class="footer-nav-link">
                         Politique de confidentialité
                     </a>
                 </li>
