@@ -341,7 +341,7 @@ template {
 
 @font-face {
   font-family: "Univers-heavy";
-  src: url("/assets/fonts/univers-condensed-light.woff2"), url("/assets/fonts/univers-condensed-light.woff"); }
+  src: url("/assets/fonts/univers-condensed-bold.woff2"), url("/assets/fonts/univers-condensed-bold.woff"); }
 
 /* --- Font sizes --- */
 /* --- Classical declaration --- */
@@ -357,7 +357,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Univers-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* --- Large screen specifications --- */
 /* --- Tablet specifications --- */
@@ -366,10 +366,6 @@ h5 {
     font-size: 55%; } }
 
 /* --- Phone specifications --- */
-@media screen and (max-width: 640px) {
-  html {
-    font-size: 45%; } }
-
 input[type="text"],
 input[type="password"],
 input[type="url"],
@@ -510,7 +506,8 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   .page-header .header-content {
     position: relative;
     min-height: 200px; }
@@ -587,14 +584,22 @@ body {
 .half-width-block {
   width: 50%; }
 
+.banner-block {
+  position: relative; }
+
 .top-banner {
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%; }
+
+.vip-card {
+  position: absolute;
+  bottom: -60px;
+  left: 5%; }
 
 .textual-block {
   padding: 0 5% 60px 5%; }
 
 .welcome-wording .page-title {
-  color: #009BAA;
   font-family: "Univers-extra-light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 9rem;
   font-weight: 300;
@@ -602,7 +607,7 @@ body {
   text-align: center; }
 
 .welcome-wording .info-title {
-  font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Univers-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2.1rem;
   margin: 0 0 10px 0; }
 
@@ -628,7 +633,7 @@ body {
   vertical-align: middle; }
 
 .downloadable-content .doc-name {
-  font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Univers-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800; }
 
 .downloadable-content .doc-type {
@@ -646,7 +651,7 @@ body {
 
 .vip-form-title {
   width: 100%;
-  font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Univers-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 3.8rem;
   margin: 0 0 10px 0; }
 
@@ -686,12 +691,12 @@ body {
     width: 39%;
     display: inline-block;
     font-weight: 800;
-    font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Univers-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .vip-form-input-file-field input[type="file"] {
     width: 60%; }
 
 .vip-form input[type="submit"] {
-  font-family: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Univers-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800; }
 
 .vip-form-postal {
@@ -711,6 +716,13 @@ body {
 /* --- Tablet specifications --- */
 /* --- Phone specifications --- */
 @media screen and (max-width: 640px) {
+  .logo-link {
+    top: 20px; }
+  .logo-visual {
+    width: 200px; }
+  .vip-card {
+    position: static;
+    margin: -60px auto 0 auto; }
   .downloadable-content .doc-type {
     margin: 5px 0 0 0; }
   .half-width-block {

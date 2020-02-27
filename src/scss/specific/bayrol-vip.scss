@@ -19,8 +19,19 @@ body{
 }
 
 // page elements
+.banner-block{
+    position: relative;
+}
+
 .top-banner{
     max-width: 100%;
+    width: 100%;
+}
+
+.vip-card{
+    position: absolute;
+    bottom: -$fix-gutter-xl;
+    left: $rel-gutter-s;
 }
 
 .textual-block{
@@ -29,7 +40,6 @@ body{
 
 .welcome-wording{
     .page-title{
-        color: $brand-first;
         font-family: $extra-light-font;
         font-size: $title-font-size-xl;
         font-weight: 300;
@@ -186,6 +196,16 @@ body{
 
 /* --- Phone specifications --- */
 @media screen and (max-width: $screen-small){
+    .logo-link {
+        top: $fix-gutter-s;
+    }
+    .logo-visual {
+        width: 200px;
+    }
+    .vip-card{
+        position: static;
+        margin: -60px auto 0 auto;
+    }
     .downloadable-content{
         .doc-type{
             margin: 5px 0 0 0;

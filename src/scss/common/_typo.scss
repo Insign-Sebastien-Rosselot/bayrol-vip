@@ -29,10 +29,10 @@ $bold-font: "Univers-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 @font-face {
     font-family: "Univers-heavy";
-    src:    url("/assets/fonts/univers-condensed-light.woff2"),
-            url("/assets/fonts/univers-condensed-light.woff");
+    src:    url("/assets/fonts/univers-condensed-bold.woff2"),
+            url("/assets/fonts/univers-condensed-bold.woff");
 }
-$heavy-font: "NeueHaasUnicaProHeavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heavy-font: "Univers-heavy", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 /* --- Font sizes --- */
 $title-font-size-xl: 9rem;
@@ -75,7 +75,4 @@ h5{
 
 /* --- Phone specifications --- */
 @media screen and (max-width: $screen-small){
-    html{
-        font-size: 45%;
-    }
 }

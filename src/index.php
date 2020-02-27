@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/Bayrol_Favicon.png" type="image/x-icon" />
     <title>Bayrol VIP</title>
     <!-- build:css css/styles.min.css -->
     <link rel="stylesheet" href="css/styles.css">
@@ -22,8 +23,19 @@
         </div>
     </header>
 
-    <section class="full-width-block">
-        <img src="assets/images/backgrounds/bg-temp.png" alt="" class="top-banner" />
+    <section class="full-width-block banner-block">
+        <picture>
+            <source media="(max-width: 480px)" srcset="assets/images/backgrounds/Bayrol_Visuel-VIP_480px.jpg">
+            <source media="(max-width: 960px)" srcset="assets/images/backgrounds/Bayrol_Visuel-VIP_960px.jpg">
+            <img src="assets/images/backgrounds/Bayrol_Visuel-VIP_1280.jpg" alt="" class="top-banner">
+        </picture>
+
+        <picture>
+            <source media="(max-width: 480px)" srcset="assets/images/backgrounds/Bayrol_Visuel-CarteVIP_480px.png">
+            <source media="(max-width: 960px)" srcset="assets/images/backgrounds/Bayrol_Visuel-CarteVIP_960px.png">
+            <img src="assets/images/backgrounds/Bayrol_Visuel-CarteVIP_1280.png" alt="" class="vip-card">
+        </picture>
+
     </section>
 
     <section class="full-width-block textual-block">
@@ -34,38 +46,38 @@
             <p class="common-text">
                 <strong>Le programme VIP, un programme qui vous offre des chèques de réduction chaque mois.</strong>
             </p>
-            <h2 class="info-title">GAGNEZ DES € GRÂCE À LA CARTE VIP</h2>
+            <h2 class="info-title">Gagnez des € grâce à la carte VIP</h2>
             <p class="common-text">
                 Chaque mois, cumulez des points qui seront transformés en <span class="text-highlight">chèques de réduction</span>.
             </p>
-            <h2 class="info-title">DES PRODUITS « BOOSTERS » POUR BÉNÉFICIER D’UN BONUS DE POINTS</h2>
+            <h2 class="info-title">Des produits « boosters » pour bénéficier d'un bonus de points</h2>
             <p class="common-text">
                 En achetant les produits <span class="text-highlight">« boosters » BAYROL</span>, vous gagnez plus de points et augmentez plus rapidement le montant de votre cagnotte.
                 <br />
-                Pour découvrir les offres du programme, <a href="file_path">téléchargez le dépliant de l’opération BAYROL VIP au format PDF</a>.
+                Pour découvrir les offres du programme, <a href="#" target="_blank">téléchargez le dépliant de l’opération BAYROL VIP au format PDF</a>.
             </p>
         </article>
         <article class="downloadable-content">
             <ul class="dl-list">
                 <li class="dl-list-item">
-                    <a href="file_path" class="dl-link">
+                    <a href="#" class="dl-link" target="_blank">
                         <img src="assets/images/pictos/picto-dl.svg" alt="Download" class="dl-picto"/>
-                        <span class="doc-name">Liste des revendeurs participants</span>
-                        <span class="doc-type">PDF • 14 MO</span>
+                        <span class="doc-name">Les revendeurs participants</span>
+                        <span class="doc-type">PDF</span>
                     </a>
                 </li>
                 <li class="dl-list-item">
-                    <a href="file_path" class="dl-link">
+                    <a href="assets/pdf/liste-produits-bayrol-vip-2020.pdf" class="dl-link" target="_blank">
                         <img src="assets/images/pictos/picto-dl.svg" alt="Download" class="dl-picto"/>
-                        <span class="doc-name">Liste des produits concernés</span>
-                        <span class="doc-type">PDF • 14 MO</span>
+                        <span class="doc-name">Les produits concernés</span>
+                        <span class="doc-type">PDF</span>
                     </a>
                 </li>
                 <li class="dl-list-item">
-                    <a href="file_path" class="dl-link">
+                    <a href="assets/pdf/REGLEMENT-BAYROL-VIP-2020.pdf" class="dl-link" target="_blank">
                         <img src="assets/images/pictos/picto-dl.svg" alt="Download" class="dl-picto"/>
-                        <span class="doc-name">Règlement du programme VIP</span>
-                        <span class="doc-type">PDF • 14 MO</span>
+                        <span class="doc-name">Le règlement</span>
+                        <span class="doc-type">PDF</span>
                     </a>
                 </li>
             </ul>
@@ -152,7 +164,7 @@
         </h2>
         <ol class="prostal-process-list">
             <li>
-                1. Imprimer le formulaire de participation <a href="file_path">disponible ici</a> ou en renseignant vos
+                1. Imprimer le formulaire de participation <a href="assets/pdf/FORMULAIRE-PARTICIPATION-BAYROL-VIP-2020.pdf" target="_blank"">disponible ici</a> ou en renseignant vos
                 coordonnées complètes sur papier libre (nom, prénom, adresse, code postal et ville, téléphone et
                 adresse e-mail)
             </li>
